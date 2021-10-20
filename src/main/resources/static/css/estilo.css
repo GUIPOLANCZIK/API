@@ -1,0 +1,2301 @@
+@charset 'utf-8';
+
+@font-face { font-family: Japonesa; src: url(../fonts/Japonesa.otf); 
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+       text-decoration: none;    
+}
+
+a{
+    color: #ffffff;
+}
+
+
+
+/*config home*/
+
+
+.container-fluid{
+  
+}
+
+#abrir{
+    position: relative;
+    z-index: 2;
+    color: darkblue;
+    text-decoration: none;
+    font-family: japonesa;
+}
+
+#cortina{
+width: 100%;
+height: 100%;
+background-color: rgba(209,8 , 8,0.0);
+position: fixed;
+z-index: 1;
+top: 0%;
+transition: 3s;
+}
+
+#cortina:target{
+background-color: rgba(209,8 , 8,0.3);
+}
+
+#modal{
+    border-radius:30px 30px 30px 30px ;
+   background-color: rgba(17,17 , 19,0.8);
+    border: solid 2px;
+    width: 56%;
+    height: 56%;
+    margin: auto;
+    margin-top: -500px;
+    padding-bottom: 40px;
+    text-decoration: none;
+
+}
+
+#modal form{
+    
+    font-size: 1.2em;
+    border: solid 1px;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+   color: white;
+
+}
+
+#fechar{
+    float: right;
+    color: #000000;
+    margin: 20px;
+    font-family: japonesa;
+    text-decoration: none;
+}
+
+#botao-confirmar{
+ background-color: rgba(17,17 , 19,0.2);
+ border-radius:6px 6px 6px 6px ;
+  border: solid 1px;
+  text-decoration: none;
+  font-family: japonesa;
+}
+
+#modal #resultado{
+   text-align: center;
+padding-bottom: 20px;
+}
+
+#container2{
+    margin: auto;
+    text-align: center;
+    border: solid 1px;
+    border-color: #000000;
+}
+/*fim fong home*/
+
+
+
+@media screen and (min-width: 220px) and (max-width: 422px){
+
+
+    
+
+    #topo-main{
+         width: 100%;
+   background-image: url(../img/graveto-branco.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  background-clip:border-box;
+}
+   
+
+
+#topo{
+    
+
+     display: flex;
+     justify-content: space-between; 
+     margin-right: 9px;
+}
+
+#logo{
+   border-radius: 50px 50px 50px 50px;
+   background-position: center;
+    background-color: rgba(209,8 , 8,0.8);
+    margin: 3px 4px ;
+    width: 85px;
+    height: 85px;
+    background-image: url(../img/cara-japonesa.png);  
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-size: 45px;
+}
+
+
+#login_sacola_favoritos{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+        width: 85px;
+
+    }
+
+
+#login_sacola_favoritos .fa-shopping-bag{
+    font-size: 20px;
+}
+
+.fa-heart{
+    font-size: 20px;
+
+}
+
+
+.fa-user-o{
+    font-size: 20px;
+}
+
+
+
+#topo_baixo{
+    display: flex;
+     justify-content: space-between;
+     margin-right: 15px;
+    
+}
+
+#externa_divBusca{
+   width: 70%;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+
+#divBusca{
+    display: flex;
+   align-items: center;
+ color: rgba(209,8 , 8,0.6);
+  border:solid 1px;
+  border-radius:15px;
+  width:220px;
+}
+
+#txtBusca{ 
+   background-color:rgba(255,255 , 255,0.6);
+  padding-left:4px;
+  font-style:italic;
+  font-size:14px;
+  border-radius:13px;
+  border:none;
+  height:25px;
+  width:220px;
+  font-family: Japonesa;
+}
+
+#btn-menu{   
+    margin: 0px 6px  0px 4px;
+     width: 20px;
+    height: 20px;
+    border-radius: 8px;  
+}
+ 
+    
+
+#btn-menu a{   
+color: rgb(209,8 , 8);
+}
+
+#menu{
+    background-color: rgba(209,8 , 8,0.9);
+   width: 100%;
+    height: 0%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    flex-direction: row-reverse;
+         overflow: hidden;
+    font-family: Japonesa;
+    font-size: 1.0em;   
+}
+
+ .fa-bars{
+     font-size: 14px;
+ }
+
+
+#menu ul{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    clear: both;
+}
+
+#menu ul a{
+text-decoration: none;
+}
+
+#menu ul li{
+    padding: 3%;
+}
+
+#menu:target{
+    height: 100%;
+}
+
+
+#btn-fechar{
+    float: right;
+    padding: 13px;
+    margin-right: 13px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+#botao-fechar a{
+text-align: center;
+}
+
+
+#div_cima_banner{
+     background-color: rgb(17,17 , 19);
+     display: flex;
+     justify-content: space-around;
+   
+}
+
+
+.escrita_cima_banner{
+    font-size: 0.8em;
+ font-family: Cambria;
+ padding: 0%;
+    margin: 0%;
+}
+ 
+
+#banner{
+position: relative;
+z-index: 2;
+}
+
+
+#mini_banner_externo{
+    
+     display: flex;
+   justify-content: center;
+   
+}
+
+
+#mini_banner{
+width: 60%;
+position: relative;
+z-index: 1;
+}
+
+
+#div_main_texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:15px;
+}
+#div_h1_texto{
+    margin: 15px 0px 0px 0px;
+    font-family: Japonesa;
+
+}
+
+#div_h1_texto h1{
+    font-size: 2.0em;
+    margin: 0%;
+}
+
+
+#centralizar_linha{
+    display: flex;
+    align-items: center;
+    justify-content: center;      
+}
+
+#centralizar_linha h1{
+font-size: 1.5em;
+}
+
+.hr{
+    width: 280px;
+  border-top: medium double #CCC;
+  height: 5px;
+  background-color: rgb(209,8 , 8);
+    margin: 0%;
+}
+
+
+/*inicio do grid*/
+
+
+#conteudos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:2px;   
+}
+
+#conteudos figure{
+    flex:100px;
+  
+}
+
+#grid1 figure:nth-child(n + 6){
+        display: block;
+    }
+
+/*fim grid*/
+
+/*inicio formatação cards*/
+
+
+
+#rodape{
+  background-image: url(../img/graveto-branco.jpg);
+    background-size: auto;
+     background-position:bottom;
+    background-repeat: no-repeat;
+   
+   
+}
+
+#newsletter{
+    border: 2px;
+    border-style:solid;
+    border-color:rgba(17,17 , 19,0.3);
+    background-color:rgba(209,8 , 8,0.1); 
+   padding-bottom: 16px;
+
+}
+
+#hr-div-newsletter{
+     margin-top:16px;
+ display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+#hr-div-newsletter hr{
+
+width: 260px;
+  height: 3px;
+  background-color: rgba(15,15 , 15,0.6);;
+   
+}
+
+#hr-div-newsletter h2{
+   position: absolute;
+   text-shadow:2px 2px #ff0000;
+}
+
+#newsletter p{
+    font-size:0.8em;
+    text-decoration:none;  
+    margin-top: 10px;
+    font-family: Cambria;
+     text-align: center;
+     text-indent: 15PX;
+     margin: 1.0em;
+     font-weight: bold;
+
+}
+
+#botao-modal{
+    margin-top: 15px;
+   display: flex;
+   justify-content: center;
+}
+
+.btn-dark:hover{
+background-color:rgb(209,8 , 8); 
+}
+
+
+
+
+
+#end{
+    background-color:rgba(209,8 , 8,0.6); 
+
+}
+
+
+
+#div-end1{
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#div-endereço{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 380px;
+background-color:rgba(209,8 , 8,0.2); 
+}
+
+
+
+#logo2{
+    border-radius: 50px 50px 50px 50px;
+   background-position: center;
+    background-color: rgb(209,8 , 8);
+    width: 60px;
+    height: 55px;
+    background-image: url(../img/cara-japonesa.png);    
+    background-repeat: no-repeat;
+  background-size: 55px;
+}
+
+
+
+
+#dados-footer{
+    padding-top: 4px ;
+ font-size:1em;
+    text-decoration:none;  
+    font-family: Cambria;
+     text-align: center;
+     text-indent: 20PX;
+     text-decoration: none;
+    
+}
+
+
+
+
+
+
+#centralizar-linha2{
+    display: flex;
+    justify-content: center;
+}
+
+#centralizar-linha2 hr{
+    width: 350px;
+    font-size:2em;
+    background-color: #ffffff;
+}
+
+
+
+h3{
+     font-size:0.8em;
+    text-decoration:none;  
+    font-family: Cambria;
+     text-align: justify;
+     text-indent: 15PX;
+     margin: 1.2em;
+     
+}
+
+#div-end2{
+    margin-bottom: 8px;
+}
+
+#icons-footer{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 8px;
+    text]none
+}
+#div-end2 #icons-footer a i{
+    transition: 0.2s; 
+    cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+#div-end2 #icons-footer a i:hover{
+     transform: scale(1.8);
+}
+
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 422px) and (max-width: 560px){
+
+
+    
+
+    #topo-main{
+         width: 100%;
+   background-image: url(../img/graveto-branco.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  background-clip:border-box;
+}
+   
+
+
+#topo{
+    
+
+     display: flex;
+     justify-content: space-between; 
+     margin-right: 25px;
+}
+
+#logo{
+   border-radius: 50px 50px 50px 50px;
+   background-position: center;
+    background-color: rgba(209,8 , 8,0.8);
+    margin: 7px 6px ;
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/cara-japonesa.png);  
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-size: 65px;
+}
+
+
+#login_sacola_favoritos{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+        width: 110px;
+
+    }
+
+
+#login_sacola_favoritos .fa-shopping-bag{
+    font-size: 24px;
+}
+
+.fa-heart{
+    font-size: 24px;
+
+}
+
+
+.fa-user-o{
+    font-size: 24px;
+}
+
+
+
+#topo_baixo{
+    display: flex;
+     justify-content: space-between;
+     margin-right: 20px;
+    
+}
+
+#externa_divBusca{
+   width: 70%;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+
+#divBusca{
+    display: flex;
+   align-items: center;
+ color: rgba(209,8 , 8,0.6);
+  border:solid 1px;
+  border-radius:15px;
+  width:280px;
+}
+
+#txtBusca{ 
+   background-color:rgba(255,255 , 255,0.6);
+  padding-left:5px;
+  font-style:italic;
+  font-size:16px;
+  border-radius:15px;
+  border:none;
+  height:40px;
+  width:280px;
+  font-family: Japonesa;
+}
+
+#btn-menu{   
+    margin: 0px 9px  0px 6px;
+     width: 30px;
+    height: 30px;
+    border-radius: 10px;  
+}
+ 
+    
+
+#btn-menu a{   
+color: rgb(209,8 , 8);
+}
+
+#menu{
+    background-color: rgba(209,8 , 8,0.9);
+   width: 100%;
+    height: 0%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    flex-direction: row-reverse;
+         overflow: hidden;
+    font-family: Japonesa;
+    font-size: 1.6em;   
+}
+
+ .fa-bars{
+     font-size: 18px;
+ }
+
+
+#menu ul{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    clear: both;
+}
+
+#menu ul a{
+text-decoration: none;
+}
+
+#menu ul li{
+    padding: 3%;
+}
+
+#menu:target{
+    height: 100%;
+}
+
+
+#btn-fechar{
+    float: right;
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#botao-fechar a{
+text-align: center;
+}
+
+
+#div_cima_banner{
+     background-color: rgb(17,17 , 19);
+     display: flex;
+     justify-content: space-around;
+    padding: 8px 0px 8px 0px;
+}
+
+
+.escrita_cima_banner{
+    font-size: 0.9em;
+ font-family: Cambria;
+ padding: 0%;
+    margin: 0%;
+}
+ 
+
+#banner{
+position: relative;
+z-index: 2;
+}
+
+
+#mini_banner_externo{
+    
+     display: flex;
+   justify-content: center;
+   padding: 20px 0px 10px 0px;
+
+}
+
+
+#mini_banner{
+width: 60%;
+position: relative;
+z-index: 1;
+}
+
+
+#div_main_texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:30px;
+}
+#div_h1_texto{
+    margin: 25px 0px 0px 0px;
+    font-family: Japonesa;
+
+}
+
+#div_h1_texto h1{
+    font-size: 2.2em;
+    margin: 0%;
+}
+
+
+#centralizar_linha{
+    display: flex;
+    align-items: center;
+    justify-content: center;      
+}
+
+#centralizar_linha h1{
+font-size: 1.7em;
+}
+
+.hr{
+    width: 310px;
+  border-top: medium double #CCC;
+  height: 6px;
+  background-color: rgb(209,8 , 8);
+    margin: 0%;
+}
+
+
+/*inicio do grid*/
+
+
+#conteudos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:10px;   
+}
+
+#conteudos figure{
+    flex:100px;
+    margin: 10px; 
+}
+
+#grid1 figure:nth-child(n + 6){
+        display: block;
+    }
+
+/*fim grid*/
+
+/*inicio formatação cards*/
+
+
+
+#rodape{
+  background-image: url(../img/graveto-branco.jpg);
+    background-size: auto;
+     background-position:bottom;
+    background-repeat: no-repeat;
+   
+   
+}
+
+#newsletter{
+    border: 2px;
+    border-style:solid;
+    border-color:rgba(17,17 , 19,0.3);
+    background-color:rgba(209,8 , 8,0.1); 
+   padding-bottom: 18px;
+
+}
+
+#hr-div-newsletter{
+     margin-top:18px;
+ display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+#hr-div-newsletter hr{
+
+width: 280px;
+  height: 4px;
+  background-color: rgba(15,15 , 15,0.6);;
+   
+}
+
+#hr-div-newsletter h2{
+   position: absolute;
+   text-shadow:2px 2px #ff0000;
+}
+
+#newsletter p{
+    font-size:0.8em;
+    text-decoration:none;  
+    margin-top: 12px;
+    font-family: Cambria;
+     text-align: center;
+     text-indent: 20PX;
+     margin: 1.2em;
+     font-weight: bold;
+
+}
+
+#botao-modal{
+    margin-top: 20px;
+   display: flex;
+   justify-content: center;
+}
+
+.btn-dark:hover{
+background-color:rgb(209,8 , 8); 
+}
+
+
+
+
+
+#end{
+    background-color:rgba(209,8 , 8,0.6); 
+
+}
+
+
+
+#div-end1{
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#div-endereço{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 380px;
+background-color:rgba(209,8 , 8,0.2); 
+}
+
+
+
+#logo2{
+    border-radius: 50px 50px 50px 50px;
+   background-position: center;
+    background-color: rgb(209,8 , 8);
+    width: 60px;
+    height: 55px;
+    background-image: url(../img/cara-japonesa.png);    
+    background-repeat: no-repeat;
+  background-size: 55px;
+}
+
+
+
+
+#dados-footer{
+    padding-top: 4px ;
+ font-size:1em;
+    text-decoration:none;  
+    font-family: Cambria;
+     text-align: center;
+     text-indent: 20PX;
+     text-decoration: none;
+    
+}
+
+
+
+
+
+
+#centralizar-linha2{
+    display: flex;
+    justify-content: center;
+}
+
+#centralizar-linha2 hr{
+    width: 350px;
+    font-size:2em;
+    background-color: #ffffff;
+}
+
+
+
+h3{
+     font-size:0.8em;
+    text-decoration:none;  
+    font-family: Cambria;
+     text-align: justify;
+     text-indent: 15PX;
+     margin: 1.2em;
+     
+}
+
+#div-end2{
+    margin-bottom: 8px;
+}
+
+#icons-footer{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 8px;
+    text]none
+}
+#div-end2 #icons-footer a i{
+    transition: 0.2s; 
+    cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+#div-end2 #icons-footer a i:hover{
+     transform: scale(1.8);
+}
+
+}
+    
+
+
+
+
+
+
+
+@media screen and (min-width: 561px) and (max-width: 660px){
+
+
+    #topo-main{
+         width: 100%;
+   background-image: url(../img/graveto-branco.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  background-clip:border-box;
+}
+   
+
+
+#topo{
+    
+
+     display: flex;
+     justify-content: space-between; 
+     margin-right: 30px;
+}
+
+#logo{
+   border-radius: 50px 50px 50px 50px;
+   background-position: center;
+    background-color: rgba(209,8 , 8,0.8);
+    margin: 7px 6px ;
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/cara-japonesa.png);  
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-size: 75px;
+}
+
+
+#login_sacola_favoritos{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+        width: 135px;
+
+    }
+
+
+
+#login_sacola_favoritos .fa-shopping-bag{
+    font-size: 28px;
+}
+
+.fa-heart{
+    font-size: 28px;
+
+}
+
+
+.fa-user-o{
+    font-size: 28px;
+}
+
+
+#topo_baixo{
+    display: flex;
+     justify-content: space-between;
+     margin-right: 25px;
+    
+}
+
+#externa_divBusca{
+   width: 70%;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+
+#divBusca{
+    display: flex;
+   align-items: center;
+ color: rgba(209,8 , 8,0.6);
+  border:solid 2px;
+  border-radius:15px;
+  width:300px;
+}
+
+#txtBusca{ 
+   background-color:rgba(255,255 , 255,0.6);
+  padding-left:7px;
+  font-style:italic;
+  font-size:18px;
+  border-radius:15px;
+  border:none;
+  height:45px;
+  width:300px;
+  font-family: Japonesa;
+}
+
+#btn-menu{   
+    margin: 0px 9px  0px 6px;
+     width: 40px;
+    height: 40px;
+    border-radius: 10px;  
+}
+ 
+     .fa-bars{
+     font-size: 22px;
+ }
+
+
+#btn-menu a{   
+color: rgb(209,8 , 8);
+}
+
+#menu{
+    background-color: rgba(209,8 , 8,0.9);
+   width: 100%;
+    height: 0%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    flex-direction: row-reverse;
+         overflow: hidden;
+    font-family: Japonesa;
+    font-size: 1.7em;   
+}
+
+
+#menu ul{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    clear: both;
+}
+
+#menu ul a{
+text-decoration: none;
+}
+
+#menu ul li{
+    padding: 5%;
+}
+
+#menu:target{
+    height: 100%;
+}
+
+
+#btn-fechar{
+    float: right;
+    padding: 18px;
+    margin-right: 18px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#botao-fechar a{
+text-align: center;
+}
+
+
+#div_cima_banner{
+     background-color: rgb(17,17 , 19);
+     display: flex;
+     justify-content: space-around;
+    padding: 9px 0px 9px 0px;
+}
+
+
+.escrita_cima_banner{
+    font-size: 1em;
+ font-family: Cambria;
+ padding: 0%;
+    margin: 0%;
+}
+ 
+
+#banner{
+position: relative;
+z-index: 2;
+}
+
+
+#mini_banner_externo{
+    
+     display: flex;
+   justify-content: center;
+   padding: 25px 0px 15px 0px;
+
+}
+
+
+#mini_banner{
+width: 60%;
+position: relative;
+z-index: 1;
+}
+
+
+#div_main_texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:45px;
+}
+#div_h1_texto{
+    margin: 30px 0px 0px 0px;
+    font-family: Japonesa;
+
+}
+
+#div_h1_texto h1{
+    font-size: 2.3em;
+    margin: 0%;
+}
+
+
+#centralizar_linha{
+    display: flex;
+    align-items: center;
+    justify-content: center;      
+}
+
+#centralizar_linha h1{
+font-size: 1.8em;
+}
+
+.hr{
+    width: 340px;
+  border-top: medium double #CCC;
+  height: 8px;
+  background-color: rgb(209,8 , 8);
+    margin: 0%;
+}
+
+
+/*inicio do grid*/
+
+
+#conteudos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:15px;   
+}
+
+#conteudos figure{
+    flex:130px;
+    margin: 15px; 
+}
+
+#grid1 figure:nth-child(n + 6){
+        display: block;
+    }
+
+/*fim grid*/
+
+/*inicio formatação cards*/
+
+
+
+#rodape{
+  background-image: url(../img/graveto-branco.jpg);
+    background-size: auto;
+     background-position:bottom;
+    background-repeat: no-repeat;
+   
+   
+}
+
+#newsletter{
+    border: 2px;
+    border-style:solid;
+    border-color:rgba(17,17 , 19,0.3);
+    background-color:rgba(209,8 , 8,0.1); 
+   padding-bottom: 18px;
+
+}
+
+#hr-div-newsletter{
+     margin-top:18px;
+ display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+#hr-div-newsletter hr{
+
+width: 280px;
+  height: 4px;
+  background-color: rgba(15,15 , 15,0.6);;
+   
+}
+
+#hr-div-newsletter h2{
+   position: absolute;
+   text-shadow:2px 2px #ff0000;
+}
+
+#newsletter p{
+    font-size:0.8em;
+    text-decoration:none;  
+    margin-top: 12px;
+    font-family: Cambria;
+     text-align: center;
+     text-indent: 20PX;
+     margin: 1.2em;
+     font-weight: bold;
+
+}
+
+#botao-modal{
+    margin-top: 20px;
+   display: flex;
+   justify-content: center;
+}
+
+.btn-dark:hover{
+background-color:rgb(209,8 , 8); 
+}
+
+
+
+
+
+#end{
+    background-color:rgba(209,8 , 8,0.6); 
+
+}
+
+
+
+#div-end1{
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#div-endereço{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 380px;
+background-color:rgba(209,8 , 8,0.2); 
+}
+
+
+
+#logo2{
+    border-radius: 50px 50px 50px 50px;
+   background-position: center;
+    background-color: rgb(209,8 , 8);
+    width: 60px;
+    height: 55px;
+    background-image: url(../img/cara-japonesa.png);    
+    background-repeat: no-repeat;
+  background-size: 55px;
+}
+
+
+
+
+#dados-footer{
+    padding-top: 4px ;
+ font-size:1em;
+    text-decoration:none;  
+    font-family: Cambria;
+     text-align: center;
+     text-indent: 20PX;
+     text-decoration: none;
+    
+}
+
+
+
+
+
+
+#centralizar-linha2{
+    display: flex;
+    justify-content: center;
+}
+
+#centralizar-linha2 hr{
+    width: 350px;
+    font-size:2em;
+    background-color: #ffffff;
+}
+
+
+
+h3{
+     font-size:0.8em;
+    text-decoration:none;  
+    font-family: Cambria;
+     text-align: justify;
+     text-indent: 15PX;
+     margin: 1.2em;
+     
+}
+
+#div-end2{
+    margin-bottom: 8px;
+}
+
+#icons-footer{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 8px;
+    text]none
+}
+#div-end2 #icons-footer a i{
+    transition: 0.2s; 
+    cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+#div-end2 #icons-footer a i:hover{
+     transform: scale(1.8);
+}
+
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:660px) and (max-width:780px){
+
+
+    #topo-main{
+         width: 100%;
+   background-image: url(../img/graveto-branco.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  background-clip:border-box;
+}
+   
+
+
+#topo{
+    
+
+     display: flex;
+     justify-content: space-between; 
+     margin-right: 40px;
+}
+
+#logo{
+   border-radius: 50px 50px 50px 50px;
+   background-position: center;
+    background-color: rgba(209,8 , 8,0.8);
+    margin: 4px 5px ;
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/cara-japonesa.png);  
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-size: 90px;
+}
+
+
+#login_sacola_favoritos{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+        width: 170px;
+
+    }
+
+
+#login_sacola_favoritos .fa-shopping-bag{
+    font-size: 30px;
+}
+
+.fa-heart{
+    font-size: 30px;
+
+}
+
+
+.fa-user-o{
+    font-size: 30px;
+}
+
+
+
+#topo_baixo{
+    display: flex;
+     justify-content: space-between;
+     margin-right: 28px;
+    
+}
+
+#externa_divBusca{
+   width: 70%;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+
+#divBusca{
+    display: flex;
+   align-items: center;
+ color: rgba(209,8 , 8,0.6);
+  border:solid 2px;
+  border-radius:13px;
+  width:340px;
+}
+
+#txtBusca{ 
+   background-color:rgba(255,255 , 255,0.6);
+  padding-left:5px;
+  font-style:italic;
+  font-size:22px;
+  border-radius:15px;
+  border:none;
+  height:45px;
+  width:340px;
+  font-family: Japonesa;
+}
+
+#btn-menu{   
+    margin: 0px 16px  0px 10px;
+     width: 50px;
+    height: 50px;
+    border-radius: 15px;  
+}
+ 
+    .fa-bars{
+     font-size: 26px;
+ }
+
+#btn-menu a{   
+color: rgb(209,8 , 8);
+}
+
+#menu{
+    background-color: rgba(209,8 , 8,0.9);
+   width: 100%;
+    height: 0%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    flex-direction: row-reverse;
+         overflow: hidden;
+    font-family: Japonesa;
+    font-size: 1.8em;   
+}
+
+
+#menu ul{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    clear: both;
+}
+
+#menu ul a{
+text-decoration: none;
+}
+
+#menu ul li{
+    padding: 6%;
+}
+
+#menu:target{
+    height: 100%;
+}
+
+
+#btn-fechar{
+    float: right;
+    padding: 25px;
+    margin-right: 25px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#botao-fechar a{
+text-align: center;
+}
+
+
+#div_cima_banner{
+     background-color: rgb(17,17 , 19);
+     display: flex;
+     justify-content: space-around;
+    padding: 16px 0px 16px 0px;
+}
+
+
+.escrita_cima_banner{
+    font-size: 1.2em;
+ font-family: Cambria;
+ padding: 0%;
+    margin: 0%;
+}
+ 
+
+#banner{
+position: relative;
+z-index: 2;
+}
+
+
+#mini_banner_externo{
+    
+     display: flex;
+   justify-content: center;
+   padding: 25px 0px 15px 0px;
+
+}
+
+
+#mini_banner{
+width: 60%;
+position: relative;
+z-index: 1;
+}
+
+
+#div_main_texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:60px;
+}
+#div_h1_texto{
+    margin: 30px 0px 0px 0px;
+    font-family: Japonesa;
+
+}
+
+#div_h1_texto h1{
+    font-size: 2.4em;
+    margin: 0%;
+}
+
+
+#centralizar_linha{
+    display: flex;
+    align-items: center;
+    justify-content: center;      
+}
+
+#centralizar_linha h1{
+font-size: 1.9em;
+}
+
+.hr{
+    width: 370px;
+  border-top: medium double #CCC;
+  height: 8px;
+  background-color: rgb(209,8 , 8);
+    margin: 0%;
+}
+
+
+/*inicio do grid*/
+
+
+#conteudos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:20px;   
+}
+
+#conteudos figure{
+    flex:150px;
+    margin: 20px; 
+}
+
+#grid1 figure:nth-child(n + 6){
+        display: block;
+    }
+
+/*fim grid*/
+
+/*inicio formatação cards*/
+
+
+
+#rodape{
+  background-image: url(../img/graveto-branco.jpg);
+    background-size: auto;
+     background-position:bottom;
+    background-repeat: no-repeat;
+   
+   
+}
+
+#newsletter{
+    border: 2px;
+    border-style:solid;
+    border-color:rgba(17,17 , 19,0.3);
+    background-color:rgba(209,8 , 8,0.1); 
+   padding-bottom: 18px;
+
+}
+
+#hr-div-newsletter{
+     margin-top:18px;
+ display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+#hr-div-newsletter hr{
+
+width: 280px;
+  height: 4px;
+  background-color: rgba(15,15 , 15,0.6);;
+   
+}
+
+#hr-div-newsletter h2{
+   position: absolute;
+   text-shadow:2px 2px #ff0000;
+}
+
+#newsletter p{
+    font-size:0.8em;
+    text-decoration:none;  
+    margin-top: 12px;
+    font-family: Cambria;
+     text-align: center;
+     text-indent: 20PX;
+     margin: 1.2em;
+     font-weight: bold;
+
+}
+
+#botao-modal{
+    margin-top: 20px;
+   display: flex;
+   justify-content: center;
+}
+
+.btn-dark:hover{
+background-color:rgb(209,8 , 8); 
+}
+
+
+
+
+
+#end{
+    background-color:rgba(209,8 , 8,0.6); 
+
+}
+
+
+
+#div-end1{
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#div-endereço{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 380px;
+background-color:rgba(209,8 , 8,0.2); 
+}
+
+
+
+#logo2{
+    border-radius: 50px 50px 50px 50px;
+   background-position: center;
+    background-color: rgb(209,8 , 8);
+    width: 60px;
+    height: 55px;
+    background-image: url(../img/cara-japonesa.png);    
+    background-repeat: no-repeat;
+  background-size: 55px;
+}
+
+
+
+
+#dados-footer{
+    padding-top: 4px ;
+ font-size:1em;
+    text-decoration:none;  
+    font-family: Cambria;
+     text-align: center;
+     text-indent: 20PX;
+     text-decoration: none;
+    
+}
+
+
+
+
+
+
+#centralizar-linha2{
+    display: flex;
+    justify-content: center;
+}
+
+#centralizar-linha2 hr{
+    width: 350px;
+    font-size:2em;
+    background-color: #ffffff;
+}
+
+
+
+h3{
+     font-size:0.9em;
+    text-decoration:none;  
+    font-family: Cambria;
+     text-align: justify;
+     text-indent: 18PX;
+     margin: 1.4em;
+     
+}
+
+#div-end2{
+    margin-bottom: 10px;
+}
+
+#icons-footer{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    text]none
+}
+#div-end2 #icons-footer a i{
+    transition: 0.2s; 
+    cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+#div-end2 #icons-footer a i:hover{
+     transform: scale(1.8);
+}
+
+}
+    
+
+
+
+
+
+
+
+@media screen and (min-width:781px) and (max-width:1120px){
+
+
+    #topo-main{
+         width: 100%;
+   background-image: url(../img/graveto-branco.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  background-clip:border-box;
+}
+   
+
+
+#topo{
+    
+
+     display: flex;
+     justify-content: space-between; 
+     margin-right: 40px;
+}
+
+#logo{
+   border-radius: 50px 50px 50px 50px;
+   background-position: center;
+    background-color: rgba(209,8 , 8,0.8);
+    margin: 20px 20px ;
+    width: 120px;
+    height: 120px;
+    background-image: url(../img/cara-japonesa.png);  
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-size: 90px;
+}
+
+
+#login_sacola_favoritos{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+        width: 200px;
+
+    }
+
+#login_sacola_favoritos .fa-shopping-bag{
+    font-size: 34px;
+}
+
+.fa-heart{
+    font-size: 34px;
+
+}
+
+
+.fa-user-o{
+    font-size: 34px;
+}
+
+
+
+#topo_baixo{
+    display: flex;
+     justify-content: space-between;
+     margin-right: 26px;
+    
+}
+
+#externa_divBusca{
+   width: 70%;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+
+#divBusca{
+    display: flex;
+   align-items: center;
+ color: rgba(209,8 , 8,0.6);
+  border:solid 2px;
+  border-radius:13px;
+  width:480px;
+}
+
+#txtBusca{ 
+   background-color:rgba(255,255 , 255,0.6);
+  padding-left:5px;
+  font-style:italic;
+  font-size:22px;
+  border-radius:15px;
+  border:none;
+  height:50px;
+  width:480px;
+  font-family: Japonesa;
+}
+
+#btn-menu{   
+    margin: 0px 16px  0px 10px;
+     width: 50px;
+    height: 50px;
+    border-radius: 15px;  
+}
+ 
+ .fa-bars{
+     font-size: 30px;
+ }
+    
+
+#btn-menu a{   
+color: rgb(209,8 , 8);
+}
+
+#menu{
+    background-color: rgba(209,8 , 8,0.9);
+   width: 100%;
+    height: 0%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    flex-direction: row-reverse;
+         overflow: hidden;
+    font-family: Japonesa;
+    font-size: 1.8em;   
+}
+
+
+#menu ul{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    clear: both;
+}
+
+#menu ul a{
+text-decoration: none;
+}
+
+#menu ul li{
+    padding: 6%;
+}
+
+#menu:target{
+    height: 100%;
+}
+
+
+#btn-fechar{
+    float: right;
+    padding: 25px;
+    margin-right: 25px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#botao-fechar a{
+text-align: center;
+}
+
+
+#div_cima_banner{
+     background-color: rgb(17,17 , 19);
+     display: flex;
+     justify-content: space-around;
+    padding: 16px 0px 16px 0px;
+}
+
+
+.escrita_cima_banner{
+    font-size: 1.2em;
+ font-family: Cambria;
+ padding: 0%;
+    margin: 0%;
+}
+ 
+
+#banner{
+position: relative;
+z-index: 2;
+}
+
+
+#mini_banner_externo{
+    
+     display: flex;
+   justify-content: center;
+   padding: 25px 0px 15px 0px;
+
+}
+
+
+#mini_banner{
+width: 60%;
+position: relative;
+z-index: 1;
+}
+
+
+#div_main_texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:60px;
+}
+#div_h1_texto{
+    margin: 30px 0px 0px 0px;
+    font-family: Japonesa;
+
+}
+
+#div_h1_texto h1{
+    font-size: 2.4em;
+    margin: 0%;
+}
+
+
+#centralizar_linha{
+    display: flex;
+    align-items: center;
+    justify-content: center;      
+}
+
+#centralizar_linha h1{
+font-size: 1.9em;
+}
+
+.hr{
+    width: 370px;
+  border-top: medium double #CCC;
+  height: 8px;
+  background-color: rgb(209,8 , 8);
+    margin: 0%;
+}
+
+
+/*inicio do grid*/
+
+
+#conteudos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:20px;   
+}
+
+#conteudos figure{
+    flex:150px;
+    margin: 20px; 
+}
+
+#grid1 figure:nth-child(n + 6){
+        display: block;
+    }
+
+/*fim grid*/
+
+/*inicio formatação cards*/
+
+
+
+#rodape{
+  background-image: url(../img/graveto-branco.jpg);
+    background-size: auto;
+     background-position:bottom;
+    background-repeat: no-repeat;
+   
+   
+}
+
+#newsletter{
+    border: 2px;
+    border-style:solid;
+    border-color:rgba(17,17 , 19,0.3);
+    background-color:rgba(209,8 , 8,0.1); 
+   padding-bottom: 18px;
+
+}
+
+#hr-div-newsletter{
+     margin-top:18px;
+ display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+#hr-div-newsletter hr{
+
+width: 320px;
+  height: 6px;
+  background-color: rgba(15,15 , 15,0.6);;
+   
+}
+
+#hr-div-newsletter h2{
+   position: absolute;
+   text-shadow:2px 2px #ff0000;
+}
+
+#newsletter p{
+    font-size:0.8em;
+    text-decoration:none;  
+    margin-top: 12px;
+    font-family: Cambria;
+     text-align: center;
+     text-indent: 25PX;
+     margin: 1.2em;
+     font-weight: bold;
+
+}
+
+#botao-modal{
+    margin-top: 25px;
+   display: flex;
+   justify-content: center;
+}
+
+.btn-dark:hover{
+background-color:rgb(209,8 , 8); 
+}
+
+
+
+
+
+#end{
+    background-color:rgba(209,8 , 8,0.6); 
+
+}
+
+
+
+#div-end1{
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#div-endereço{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 550px;
+background-color:rgba(209,8 , 8,0.2); 
+}
+
+
+
+#logo2{
+    border-radius: 50px 50px 50px 50px;
+   background-position: center;
+    background-color: rgb(209,8 , 8);
+    width: 90px;
+    height: 90px;
+    background-image: url(../img/cara-japonesa.png);    
+    background-repeat: no-repeat;
+  background-size: 60px;
+}
+
+
+
+
+#dados-footer{
+    padding-top: 8px ;
+ font-size:1em;
+    text-decoration:none;  
+    font-family: Cambria;
+     text-align: center;
+     text-indent: 25PX;
+     text-decoration: none;
+    
+}
+
+
+
+
+
+
+#centralizar-linha2{
+    display: flex;
+    justify-content: center;
+}
+
+#centralizar-linha2 hr{
+    width: 400px;
+    font-size:2em;
+    background-color: #ffffff;
+}
+
+
+
+h3{
+     font-size:1em;
+    text-decoration:none;  
+    font-family: Cambria;
+     text-align: justify;
+     text-indent: 20PX;
+     margin: 1.6em;
+     
+}
+
+#div-end2{
+    margin-bottom: 14px;
+}
+
+#icons-footer{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 14px;
+    text]none
+}
+#div-end2 #icons-footer a i{
+    transition: 0.2s; 
+    cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+#div-end2 #icons-footer a i:hover{
+     transform: scale(1.8);
+}
+
+}
+    
+
+
+
+
+
+    
